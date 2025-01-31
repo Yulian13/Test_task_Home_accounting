@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+		<assembly>
+				<name>Test_task_Home_accounting</name>
+		</assembly>
+		<members>
+				<member name="M:Test_task_Home_accounting.Controllers.AuthenticatorController.Register(BusinessLogic.Models.User.Arguments.RegistrationModel)">
+						<summary>
+						Создание пользователя
+						</summary>
+				</member>
+				<member name="M:Test_task_Home_accounting.Controllers.AuthenticatorController.Login(BusinessLogic.Models.User.Arguments.LoginModel)">
+						<summary>
+						Получение токетов для авторизации
+						</summary>
+				</member>
+				<member name="M:Test_task_Home_accounting.Controllers.AuthenticatorController.Refresh(BusinessLogic.Models.User.Arguments.RefreshModel)">
+						<summary>
+						Обновление токена авторизации
+						</summary>
+				</member>
+				<member name="M:Test_task_Home_accounting.Controllers.CostCategoriesEditController.Insert(BusinessLogic.Models.CostCategories.Arguments.InsertCostCategoriesModel)">
+						<summary>
+						Дабавление категории затрат
+						</summary>
+				</member>
+				<member name="M:Test_task_Home_accounting.Controllers.CostCategoriesEditController.Update(BusinessLogic.Models.CostCategories.Arguments.UpdateCostCategoriesModel)">
+						<summary>
+						Изменение категории затрат
+						</summary>
+				</member>
+				<member name="M:Test_task_Home_accounting.Controllers.CostCategoriesEditController.Delete(BusinessLogic.Models.CostCategories.Arguments.DeleteCostCategoriesModel)">
+						<summary>
+						Удаление категории затрат
+						</summary>
+				</member>
+				<member name="M:Test_task_Home_accounting.Controllers.CurrencyController.GetCurrentRates(BusinessLogic.Models.Currency.Arguments.CurrentRatesModel)">
+						<summary>
+						Получить курс валют.
+						Всех или только указанные
+						</summary>
+				</member>
+				<member name="M:Test_task_Home_accounting.Controllers.CurrencyController.ConvertCurrency(BusinessLogic.Models.Currency.Arguments.ConvertCurrencyModel)">
+						<summary>
+						Конвертация суммы от одной валюты к другой.
+						</summary>
+						<param name="model"></param>
+						<returns></returns>
+				</member>
+				<member name="M:Test_task_Home_accounting.Controllers.ExpenseEditController.Insert(BusinessLogic.Models.Expense.Arguments.InsertExpenseModel)">
+						<summary>
+						Дабавление затраты
+						</summary>
+				</member>
+				<member name="M:Test_task_Home_accounting.Controllers.ExpenseEditController.Update(BusinessLogic.Models.Expense.Arguments.UpdateExpenseModel)">
+						<summary>
+						Изменение затраты
+						</summary>
+				</member>
+				<member name="M:Test_task_Home_accounting.Controllers.ExpenseEditController.Delete(BusinessLogic.Models.Expense.Arguments.DeleteExpenseModel)">
+						<summary>
+						Удаление затраты
+						</summary>
+				</member>
+				<member name="M:Test_task_Home_accounting.Controllers.ReportController.GetExpenses(BusinessLogic.Models.Report.Arguments.GetExpensesModel)">
+						<summary>
+						Получить все затраты за указанный в дате месяц
+						</summary>
+				</member>
+				<member name="M:Test_task_Home_accounting.Controllers.ReportController.GetStatistic(BusinessLogic.Models.Report.Arguments.GetStatisticModel)">
+						<summary>
+						Получить статистику по категориям затрат и пользователям для конкретного периода
+						</summary>
+				</member>
+		</members>
+</doc>

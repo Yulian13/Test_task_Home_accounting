@@ -55,6 +55,9 @@ internal class Program
 				}
 			};
 
+			var xmlPath = Path.Combine(AppContext.BaseDirectory, "ShopAPI.xml");
+			options.IncludeXmlComments(xmlPath);
+
 			options.AddSecurityRequirement(new OpenApiSecurityRequirement { { scheme, Array.Empty<string>() } });
 		});
 

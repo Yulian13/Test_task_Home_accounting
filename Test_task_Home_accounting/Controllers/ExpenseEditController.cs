@@ -17,6 +17,9 @@ namespace Test_task_Home_accounting.Controllers
 			this.editor = editor;
 		}
 
+		/// <summary>
+		/// Дабавление затраты
+		/// </summary>
 		[HttpPost("insert")]
 		public async Task<IActionResult> Insert([FromBody] InsertExpenseModel model)
 		{
@@ -32,6 +35,9 @@ namespace Test_task_Home_accounting.Controllers
 				"Failed to insert expense: {0}");
 		}
 
+		/// <summary>
+		/// Изменение затраты
+		/// </summary>
 		[HttpPost("update")]
 		public async Task<IActionResult> Update([FromBody] UpdateExpenseModel model)
 		{
@@ -47,6 +53,10 @@ namespace Test_task_Home_accounting.Controllers
 				"Failed to update expense: {0}");
 		}
 
+
+		/// <summary>
+		/// Удаление затраты
+		/// </summary>
 		[HttpPost("delete")]
 		public async Task<IActionResult> Delete([FromBody] DeleteExpenseModel model)
 		{

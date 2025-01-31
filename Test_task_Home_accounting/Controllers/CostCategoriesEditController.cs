@@ -17,6 +17,9 @@ namespace Test_task_Home_accounting.Controllers
 			this.editor = editor;
 		}
 
+		/// <summary>
+		/// Дабавление категории затрат
+		/// </summary>
 		[HttpPost("insert")]
 		public async Task<IActionResult> Insert([FromBody] InsertCostCategoriesModel model)
 		{
@@ -33,6 +36,9 @@ namespace Test_task_Home_accounting.Controllers
 				"Failed to insert category: {0}");
 		}
 
+		/// <summary>
+		/// Изменение категории затрат
+		/// </summary>
 		[HttpPost("update")]
 		public async Task<IActionResult> Update([FromBody] UpdateCostCategoriesModel model)
 		{
@@ -48,6 +54,9 @@ namespace Test_task_Home_accounting.Controllers
 				"Failed to update category: {0}");
 		}
 
+		/// <summary>
+		/// Удаление категории затрат
+		/// </summary>
 		[HttpPost("delete")]
 		public async Task<IActionResult> Delete([FromBody] DeleteCostCategoriesModel model)
 		{

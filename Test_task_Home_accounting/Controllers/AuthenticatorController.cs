@@ -17,6 +17,9 @@ namespace Test_task_Home_accounting.Controllers
 			this.authenticator = authenticator;
 		}
 
+		/// <summary>
+		/// Создание пользователя
+		/// </summary>
 		[HttpPost("register")]
 		public async Task<IActionResult> Register([FromBody] RegistrationModel model)
 		{
@@ -34,6 +37,9 @@ namespace Test_task_Home_accounting.Controllers
 				"User successfully created");
 		}
 
+		/// <summary>
+		/// Получение токетов для авторизации
+		/// </summary>
 		[HttpPost("login")]
 		public async Task<IActionResult> Login([FromBody] LoginModel model)
 		{
@@ -55,6 +61,9 @@ namespace Test_task_Home_accounting.Controllers
 				"Failed to login user: {0}");
 		}
 
+		/// <summary>
+		/// Обновление токена авторизации
+		/// </summary>
 		[HttpPost("refresh")]
 		public async Task<IActionResult> Refresh([FromBody] RefreshModel model)
 		{

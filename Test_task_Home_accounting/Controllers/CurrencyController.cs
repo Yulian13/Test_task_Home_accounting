@@ -17,6 +17,10 @@ namespace Test_task_Home_accounting.Controllers
 			this.currencyService = currencyService;
 		}
 
+		/// <summary>
+		/// Получить курс валют.
+		/// Всех или только указанные
+		/// </summary>
 		[HttpPost("rates")]
 		public async Task<IActionResult> GetCurrentRates([FromBody] CurrentRatesModel model)
 		{
@@ -32,6 +36,11 @@ namespace Test_task_Home_accounting.Controllers
 				"Failed to get current rates: {0}");
 		}
 
+		/// <summary>
+		/// Конвертация суммы от одной валюты к другой.
+		/// </summary>
+		/// <param name="model"></param>
+		/// <returns></returns>
 		[HttpPost("convert")]
 		public async Task<IActionResult> ConvertCurrency([FromBody] ConvertCurrencyModel model)
 		{

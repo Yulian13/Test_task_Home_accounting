@@ -17,6 +17,9 @@ namespace Test_task_Home_accounting.Controllers
 			this.reporter = reporter;
 		}
 
+		/// <summary>
+		/// Получить все затраты за указанный в дате месяц
+		/// </summary>
 		[HttpPost("expenses")]
 		public async Task<IActionResult> GetExpenses([FromBody] GetExpensesModel model)
 		{
@@ -35,6 +38,9 @@ namespace Test_task_Home_accounting.Controllers
 				"Failed to get expenses: {0}");
 		}
 
+		/// <summary>
+		/// Получить статистику по категориям затрат и пользователям для конкретного периода
+		/// </summary>
 		[HttpPost("statistic")]
 		public async Task<IActionResult> GetStatistic([FromBody] GetStatisticModel model)
 		{
