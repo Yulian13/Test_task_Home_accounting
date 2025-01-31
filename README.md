@@ -2,12 +2,12 @@
 
 Для работы приложения в appsettings.json нужно заполнить некоторые свойства.
 
- -- DefaultConnection - строка подключения к базе данных PostgreSQL.
+ -- "DefaultConnection" - строка подключения к базе данных PostgreSQL.
  
- -- Secret - секретный ключ для генрации токенов
+ -- "Secret" - секретный ключ для генрации токенов
  
- -- FixerApiKey - Api ключ для получения списка валют.
+ -- "FixerApiKey" - Api ключ для получения списка валют.
      Можно бесплатно создать на сайте https://fixer.io/signup/free , либоже использовать мой "ea7d148f3ccf459c6e52d0a3c1877e5d"
 
-Бэкап базы данных расположен по пути DataBaseAccess/db_Backup/HomeAccount.backup.
+Бэкап базы данных расположен по пути "DataBaseAccess/db_Backup/HomeAccount.backup".
 В ней пароль всех её пользователей равен их логину.
